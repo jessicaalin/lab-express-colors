@@ -1,0 +1,10 @@
+<div class="container">
+  <ul>
+    <% myColors.forEach((oneColor) => { %>
+      <% if ( oneColor.category === 'yellow') { %>
+        <div class="card"><li style="background-color:<%= oneColor.hex %>"></li>
+          <p><%= oneColor.keyword %> <br> <%= oneColor.hex %> </p></div>
+      <% } %>
+    <% }); %>
+  </ul>
+</div>
